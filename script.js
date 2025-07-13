@@ -40,3 +40,20 @@ button.addEventListener('click', event => {
     generateBoxes(amount);
   }
 });
+
+const gridItems = document.querySelectorAll('.grid-item');
+const gridItemsArr = Array.from(gridItems);
+
+container.addEventListener('click', event => {
+  randomizeColor(event.target);
+});
+
+function randomizeColor(node) {
+  const random = () => Math.floor(Math.random() * 255) + 1;
+  const color = `rgb(${random()},${random()},${random()})`;
+  node.style.backgroundColor = color;
+}
+
+// function darken(node) {
+//   const color = node.style.backgroundColor;
+// }

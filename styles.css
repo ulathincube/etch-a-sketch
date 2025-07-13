@@ -98,7 +98,7 @@ body {
 }
 
 .container > * {
-  border: 1px solid black;
+  border: none;
   margin-bottom: -1px;
   margin-left: -1px;
   flex: auto;
